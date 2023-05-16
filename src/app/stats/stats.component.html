@@ -1,0 +1,99 @@
+<div class="app-stats">
+  <div class="app-stats__wrapper">
+  <h3 class="app-stats__heading">За I квартал</h3>
+    <dl class="app-stats__grid">
+      <div class="app-stats__grid-item">
+        <dt class="app-stats__grid-title">Всего инцидентов</dt>
+        <dd class="app-stats__grid-content">
+          <div class="app-stats__number">
+            350
+            <span class="app-stats__total">из 700</span>
+          </div>
+          <div class="app-stats__badge app-stats__badge_up">
+            50%
+          </div>
+        </dd>
+      </div>
+      <div class="app-stats__grid-item">
+        <dt class="app-stats__grid-title">Входящих</dt>
+        <dd class="app-stats__grid-content">
+          <div class="app-stats__number">
+            200
+            <span class="app-stats__total">из 350</span>
+          </div>
+          <div class="app-stats__badge app-stats__badge_up">
+            57.14%
+          </div>
+        </dd>
+      </div>
+      <div class="app-stats__grid-item">
+        <dt class="app-stats__grid-title">Принятых</dt>
+        <dd class="app-stats__grid-content">
+          <div class="app-stats__number">
+            50
+            <span class="app-stats__total">из 350</span>
+          </div>
+          <div class="app-stats__badge app-stats__badge_up">
+            14.29%
+          </div>
+        </dd>
+      </div>
+      <div class="app-stats__grid-item">
+        <dt class="app-stats__grid-title">Отклонённых</dt>
+        <dd class="app-stats__grid-content">
+          <div class="app-stats__number">
+            150
+            <span class="app-stats__total">из 350</span>
+          </div>
+          <div class="app-stats__badge app-stats__badge_up">
+            42.9%
+          </div>
+        </dd>
+      </div>
+    </dl>
+    <dl class="app-stats__grid app-stats__grid_loss">
+      <div class="app-stats__grid-item">
+        <dt class="app-stats__grid-title">Ущерб от кибератак</dt>
+        <dd class="app-stats__grid-content">
+          <div class="app-stats__number">
+            {{loss | currency:'RUB'}}
+          </div>
+          <div class="app-stats__badge app-stats__badge_down">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="app-stats__badge-icon app-stats__badge_down">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+            </svg>
+            14.29%
+          </div>
+        </dd>
+      </div>
+      <div class="app-stats__grid-item">
+        <dt class="app-stats__grid-title">Ущерб от мошенников</dt>
+        <dd class="app-stats__grid-content">
+          <div class="app-stats__number">
+            {{loss | currency:'RUB'}}
+          </div>
+          <div class="app-stats__badge app-stats__badge_up">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="app-stats__badge-icon app-stats__badge_up">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+            </svg>
+            14.29%
+          </div>
+        </dd>
+      </div>
+      <div class="app-stats__grid-item">
+        <dt class="app-stats__grid-title">Ущерб от третьих лиц</dt>
+        <dd class="app-stats__grid-content">
+          <div class="app-stats__number">
+            {{loss | currency:'RUB'}}
+          </div>
+          <div class="app-stats__badge app-stats__badge_up">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="app-stats__badge-icon app-stats__badge_up">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+            </svg>
+            14.29%
+          </div>
+        </dd>
+      </div>
+    </dl>
+  </div>
+</div>

@@ -84,6 +84,7 @@
 
 .app-page-heading {
   max-width: 80rem;
+  padding: 2rem;
   margin: 0 auto;
 }
 .app-page-heading__inner {
@@ -119,6 +120,9 @@
   line-height: 1.25rem;
   color: rgb(107, 114, 128);
 }
+.app-page-heading__details-item_left {
+  margin-left: 1.5rem;
+}
 .app-page-heading__actions {
   display: flex;
   margin-top: 0;
@@ -145,6 +149,9 @@
   color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.05) 0 1px 2px 0;
   background-color: rgb(79, 70, 229);
+}
+.app-page-heading__button_publish:hover {
+  background-color: rgb(99, 102, 241);
 }
 .app-page-heading__button_publish .app-page-heading__icon {
   color: rgb(255, 255, 255);
@@ -306,7 +313,7 @@
   background-color: rgb(255, 255, 255);
 }
 .app-content__content {
-  max-width: 56rem;
+  max-width: 80rem;
   margin: 0 auto;
 }
 .app-content__box {
