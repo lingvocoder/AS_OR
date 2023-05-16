@@ -1,0 +1,108 @@
+$kkb-navbar-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
+.app-navbar {
+  background-color: rgb(255, 255, 255);
+  box-shadow: $kkb-navbar-shadow;
+
+  &__wrapper {
+    max-width: 80rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0 auto;
+  }
+
+  &__inner {
+    display: flex;
+    height: auto;
+    //height: 5rem;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__tabs-menu {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    margin-left: 6rem;
+
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.375rem;
+    padding: 0.5rem 0.75rem;
+    //height: 2rem;
+    border-radius: 0.375rem;
+    border-width: 0;
+    cursor: pointer;
+    font: {
+      size: 0.875rem;
+      weight: 600;
+    };
+    line-height: 1.25rem;
+    //background-color: rgb(116, 192, 252);
+    //background-color: rgb(251, 204, 50);
+    background-color: rgb(255, 190, 11);
+    //color: rgb(255, 255, 255);
+    color: rgb(17, 24, 39);
+
+    &:hover {
+      background-color: rgb(255, 201, 51);
+    }
+  }
+
+  &__icon {
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-right: -0.125rem;
+    //fill: rgb(255,255,255);
+    fill: rgb(17, 24, 39);
+  }
+
+  &__tab {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.25rem 0;
+    margin-left: 2rem;
+    font: {
+      size: 0.875rem;
+      weight: 500;
+    };
+    line-height: 1.25rem;
+    color: rgb(107, 114, 128);
+    border-width: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover:not(.app-navbar__tab_active) {
+      color: rgb(55, 65, 81);
+      border-color: rgb(209 213 219);
+    }
+
+    &_active {
+      color: rgb(55, 65, 81);
+      border-color: rgb(99, 102, 241);
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  &__img {
+    display: block;
+    height: 2rem;
+    width: auto;
+  }
+
+
+}

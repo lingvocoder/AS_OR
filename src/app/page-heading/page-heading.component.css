@@ -1,0 +1,25 @@
+.app-page-heading {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.app-page-heading__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.app-page-heading__meta {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.app-page-heading__heading {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+  letter-spacing: -0.025rem;
+}
+
+/*# sourceMappingURL=page-heading.component.css.map */

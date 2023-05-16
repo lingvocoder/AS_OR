@@ -1,0 +1,110 @@
+.app-grid-list {
+  display: grid;
+  gap: 2rem;
+  column-gap: 3rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  padding: 5rem 0;
+}
+.app-grid-list__item {
+  display: flow-root;
+}
+.app-grid-list__heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(17, 24, 39);
+  letter-spacing: -0.025rem;
+  line-height: 1;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+.app-grid-list__wrapper {
+  position: relative;
+  display: flex;
+  padding: 0.5rem;
+  margin-left: -0.5rem;
+  border-radius: 0.75rem;
+  align-items: center;
+  transition: box-shadow 0.3s 0s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.app-grid-list__wrapper:hover {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+.app-grid-list__icon-wrapper {
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.app-grid-list__icon-wrapper[data-action=register] {
+  background-color: rgb(255, 241, 242);
+}
+.app-grid-list__icon-wrapper[data-action=register] .app-grid-list__icon {
+  stroke: rgb(190, 18, 60);
+}
+.app-grid-list__icon-wrapper[data-order="2"] {
+  background-color: rgb(254, 252, 232);
+}
+.app-grid-list__icon-wrapper[data-order="2"] .app-grid-list__icon {
+  stroke: rgb(161, 98, 7);
+}
+.app-grid-list__icon-wrapper[data-action=accept] {
+  background-color: rgb(240, 253, 250);
+}
+.app-grid-list__icon-wrapper[data-action=accept] .app-grid-list__icon {
+  stroke: rgb(15, 118, 110);
+}
+.app-grid-list__icon-wrapper[data-action=incoming] {
+  background-color: rgb(240, 249, 255);
+}
+.app-grid-list__icon-wrapper[data-action=incoming] .app-grid-list__icon {
+  stroke: rgb(3, 105, 161);
+}
+.app-grid-list__icon-wrapper[data-order="5"] {
+  background-color: rgb(238, 242, 255);
+}
+.app-grid-list__icon-wrapper[data-order="5"] .app-grid-list__icon {
+  stroke: rgb(67, 56, 202);
+}
+.app-grid-list__icon-wrapper[data-action=reject] {
+  background-color: rgb(250, 245, 255);
+}
+.app-grid-list__icon-wrapper[data-action=reject] .app-grid-list__icon {
+  stroke: rgb(126, 34, 206);
+}
+.app-grid-list__icon {
+  width: 2rem;
+  height: 2rem;
+  stroke: rgb(255, 255, 255);
+}
+.app-grid-list__title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.25rem;
+  color: rgb(17, 24, 39);
+}
+.app-grid-list__link {
+  color: inherit;
+  text-decoration: none;
+}
+.app-grid-list__overlay {
+  position: absolute;
+  inset: 0;
+}
+.app-grid-list__description {
+  margin-left: 1rem;
+}
+.app-grid-list__text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  color: rgb(107, 114, 128);
+}
+
+/*# sourceMappingURL=grid-list.component.css.map */

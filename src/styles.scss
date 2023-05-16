@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "normalize.css";
+@import "app/navbar/navbar.component";
+@import "app/page-heading/page-heading.component";
+@import "app/footer/footer.component";
+@import "app/content/content.component";

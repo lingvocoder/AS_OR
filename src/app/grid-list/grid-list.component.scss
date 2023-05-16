@@ -1,0 +1,150 @@
+$kkb-animation-timing: 0.45, 0, 0.55, 1;
+
+.app-grid-list {
+  display: grid;
+  gap: 2rem;
+  column-gap: 3rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  padding: 5rem 0;
+
+  &__item {
+    display: flow-root;
+  }
+
+  &__heading {
+    text-align: center;
+    font: {
+      size: 2rem;
+      weight: 700;
+    };
+    color: rgb(17, 24, 39);
+    letter-spacing: -0.025rem;
+    line-height: 1;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    padding: 0.5rem;
+    margin-left: -0.5rem;
+    border-radius: 0.75rem;
+    align-items: center;
+    transition: box-shadow 0.3s 0s cubic-bezier($kkb-animation-timing);
+
+    &:hover {
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
+      0 2px 4px rgba(0, 0, 0, 0.07),
+      0 4px 8px rgba(0, 0, 0, 0.07),
+      0 8px 16px rgba(0, 0, 0, 0.07),
+      0 16px 32px rgba(0, 0, 0, 0.07),
+      0 32px 64px rgba(0, 0, 0, 0.07);
+    }
+  }
+
+  &__icon-wrapper {
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+
+    &[data-action="register"] {
+      //background-color: rgb(255, 0, 110);
+      background-color: rgb(255, 241, 242);
+
+      & .app-grid-list__icon {
+        stroke: rgb(190, 18, 60);
+      }
+    }
+
+    &[data-order="2"] {
+      //background-color: rgb(255, 190, 10);
+      background-color: rgb(254, 252, 232);
+
+      & .app-grid-list__icon {
+        stroke: rgb(161, 98, 7);
+      }
+    }
+
+    &[data-action="accept"] {
+      //background-color: rgb(34, 197, 94);
+      background-color: rgb(240, 253, 250);
+
+      & .app-grid-list__icon {
+        stroke: rgb(15, 118, 110);
+      }
+    }
+
+    &[data-action="incoming"] {
+      //background-color: rgb(31, 117, 255);
+      background-color: rgb(240, 249, 255);
+
+      & .app-grid-list__icon {
+        stroke: rgb(3, 105, 161);
+      }
+    }
+
+    &[data-order="5"] {
+      //background-color: rgb(99, 102, 241);
+      background-color: rgb(238, 242, 255);
+
+      & .app-grid-list__icon {
+        stroke: rgb(67, 56, 202);
+      }
+    }
+
+    &[data-action="reject"] {
+      //background-color: rgb(168, 85, 247);
+      background-color: rgb(250, 245, 255);
+
+      & .app-grid-list__icon {
+        stroke: rgb(126, 34, 206);
+      }
+    }
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    stroke: rgb(255, 255, 255);
+  }
+
+  &__title {
+    font: {
+      size: 1rem;
+      weight: 500;
+    };
+    margin: 0;
+    line-height: 1.25rem;
+    color: rgb(17, 24, 39);
+  }
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+  }
+
+  &__description {
+    margin-left: 1rem;
+  }
+
+  &__text {
+    font: {
+      size: 1rem;
+    };
+    line-height: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    color: rgb(107, 114, 128);
+  }
+}
