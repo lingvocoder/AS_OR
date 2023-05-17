@@ -14,6 +14,7 @@ import { UserPageComponent } from './user-page/user-page.component';
 import { StatsComponent } from './stats/stats.component';
 import {LOCALE_ID} from "@angular/core";
 import localeRu from '@angular/common/locales/ru';
+import { InputGroupComponent } from './input-group/input-group.component';
 
 registerLocaleData(localeRu);
 
@@ -27,7 +28,8 @@ registerLocaleData(localeRu);
     GridListComponent,
     PageHeadingComponent,
     UserPageComponent,
-    StatsComponent
+    StatsComponent,
+    InputGroupComponent
   ],
   imports: [
     BrowserModule,
