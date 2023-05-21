@@ -84,7 +84,7 @@
 
 .app-page-heading {
   max-width: 80rem;
-  padding: 2rem;
+  padding: 2rem 0;
   margin: 0 auto;
 }
 .app-page-heading__inner {
@@ -307,10 +307,13 @@
 .app-content__wrapper {
   max-width: 80rem;
   padding: 0 2rem;
-  margin: 0 auto;
+  margin: 2rem auto;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-radius: 0.5rem;
 }
 .app-content__inner {
   background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
 }
 .app-content__content {
   max-width: 80rem;

@@ -3,11 +3,14 @@
   &__wrapper {
     max-width: 80rem;
     padding: 0 2rem;
-    margin: 0 auto;
+    margin: 2rem auto;
+    border: 1px solid rgb(15, 23, 42, 0.1);
+    border-radius: 0.5rem;
   }
 
   &__inner {
     background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
   }
 
   &__content {

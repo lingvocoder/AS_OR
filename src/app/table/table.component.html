@@ -1,0 +1,385 @@
+<div class="app-table">
+  <div class="app-table__wrapper">
+    <div class="app-table__heading">
+      <div class="app-table__meta">
+        <h1 class="app-table__header">Инциденты ККБ</h1>
+        <p class="app-table__description">При экспорте файла в формате Excel количество столбцов увеличится</p>
+      </div>
+    </div>
+    <div class="app-table__layout">
+      <div class="app-table__content">
+        <table class="app-table__table">
+          <thead>
+          <tr class="app-table__row app-table__row_sticky">
+            <th scope="col" class="app-table__thead app-table__checkbox app-table__checkbox_name">
+              <input type="checkbox" class="app-table__input">
+            </th>
+            <th scope="col" class="app-table__thead">ID инцидента</th>
+            <th scope="col" class="app-table__thead">ФИО сотрудника</th>
+            <th scope="col" class="app-table__thead">Подразделение
+              <!--              <span class="app-table__sortable">-->
+              <!--                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="app-table__icon">-->
+              <!--                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />-->
+              <!--                </svg>-->
+              <!--              </span>-->
+            </th>
+            <th scope="col" class="app-table__thead">Дата выявления события
+              <!--              <span class="app-table__sortable">-->
+              <!--                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="app-table__icon">-->
+              <!--                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />-->
+              <!--                </svg>-->
+              <!--              </span>-->
+            </th>
+            <th scope="col" class="app-table__thead">Дата реализации события
+              <!--              <span class="app-table__sortable">-->
+              <!--                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="app-table__icon">-->
+              <!--                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />-->
+              <!--                </svg>-->
+              <!--              </span>-->
+            </th>
+            <th scope="col" class="app-table__thead">Дата добавления события
+              <!--              <span class="app-table__sortable">-->
+              <!--                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="app-table__icon">-->
+              <!--                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />-->
+              <!--                </svg>-->
+              <!--              </span>-->
+            </th>
+            <th scope="col" class="app-table__thead">Статус</th>
+            <th scope="col" class="app-table__thead">Вложения</th>
+            <th scope="col" class="app-table__thead">Выгрузить в БД</th>
+            <th scope="col" class="app-table__thead app-table__thead_edit"></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr class="app-table__row app-table__row_active">
+            <td class="app-table__checkbox">
+              <div class="app-table__bar app-table__bar_active"></div>
+              <input type="checkbox" class="app-table__input">
+            </td>
+            <td class="app-table__tdata">2a23d377-e184-45c3-b326-9fac304232f2</td>
+            <td class="app-table__tdata">Гончаров Алексей Сергеевич</td>
+            <td class="app-table__tdata">УРПО</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">
+              <span class="app-table__status app-table__status_complete">
+                <svg class="app-table__dot app-table__dot_complete" viewBox="0 0 6 6" aria-hidden="true">
+                  <circle cx="3" cy="3" r="3"></circle>
+                </svg>
+                Завершен
+              </span>
+            </td>
+            <td class="app-table__tdata ">file.pdf</td>
+            <td class="app-table__tdata ">Да</td>
+            <td class="app-table__tdata app-table__tdata_edit">
+              <a href="#" class="app-table__link app-table__link_edit">Редактировать</a>
+            </td>
+          </tr>
+          <tr class="app-table__row ">
+            <td class="app-table__checkbox">
+              <div class="app-table__bar"></div>
+              <input type="checkbox" class="app-table__input">
+            </td>
+            <td class="app-table__tdata">0c714150-5ab7-460b-aab2-5224c4c4b50b</td>
+            <td class="app-table__tdata">Гончаров Алексей Сергеевич</td>
+            <td class="app-table__tdata">УЗИ</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">
+              <span class="app-table__status app-table__status_process">
+                <svg class="app-table__dot app-table__dot_process" viewBox="0 0 6 6" aria-hidden="true">
+                  <circle cx="3" cy="3" r="3"></circle>
+                </svg>
+                В работе
+              </span>
+            </td>
+            <td class="app-table__tdata">longfile.pdf</td>
+            <td class="app-table__tdata ">Нет</td>
+            <td class="app-table__tdata app-table__tdata_edit">
+              <a href="#" class="app-table__link app-table__link_edit">Редактировать</a>
+            </td>
+          </tr>
+          <tr class="app-table__row">
+            <td class="app-table__checkbox">
+              <div class="app-table__bar"></div>
+              <input type="checkbox" class="app-table__input">
+            </td>
+            <td class="app-table__tdata">ad902f81-fea0-4cc2-b36b-c5a955913f6b</td>
+            <td class="app-table__tdata">Гончаров Алексей Сергеевич</td>
+            <td class="app-table__tdata">ДИТ</td>
+            <td class="app-table__tdata">25.05.2023 00:00</td>
+            <td class="app-table__tdata">25.05.2023 00:00</td>
+            <td class="app-table__tdata">25.05.2023 00:00</td>
+            <td class="app-table__tdata">
+              <span class="app-table__status app-table__status_complete">
+                <svg class="app-table__dot app-table__dot_complete" viewBox="0 0 6 6" aria-hidden="true">
+                  <circle cx="3" cy="3" r="3"></circle>
+                </svg>
+                Завершен
+              </span>
+            </td>
+            <td class="app-table__tdata">verylongfile.pdf</td>
+            <td class="app-table__tdata ">Да</td>
+            <td class="app-table__tdata app-table__tdata_edit">
+              <a href="#" class="app-table__link app-table__link_edit">Редактировать</a>
+            </td>
+          </tr>
+          <tr class="app-table__row ">
+            <td class="app-table__checkbox">
+              <div class="app-table__bar"></div>
+              <input type="checkbox" class="app-table__input">
+            </td>
+            <td class="app-table__tdata">fe2918d0-7ac2-46ee-ba46-f2fd1f0150e3</td>
+            <td class="app-table__tdata">Гончаров Алексей Сергеевич</td>
+            <td class="app-table__tdata">УРПО</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">
+              <span class="app-table__status app-table__status_incomplete">
+                <svg class="app-table__dot app-table__dot_incomplete" viewBox="0 0 6 6" aria-hidden="true">
+                  <circle cx="3" cy="3" r="3"></circle>
+                </svg>
+                Не завершен
+              </span>
+            </td>
+            <td class="app-table__tdata">file.pdf</td>
+            <td class="app-table__tdata ">Да</td>
+            <td class="app-table__tdata app-table__tdata_edit">
+              <a href="#" class="app-table__link app-table__link_edit">Редактировать</a>
+            </td>
+          </tr>
+          <tr class="app-table__row">
+            <td class="app-table__checkbox">
+              <div class="app-table__bar"></div>
+              <input type="checkbox" class="app-table__input">
+            </td>
+            <td class="app-table__tdata">84f16ba8-faa7-4a0a-a602-97ee29a1c34e</td>
+            <td class="app-table__tdata">Гончаров Алексей Сергеевич</td>
+            <td class="app-table__tdata">УРПО</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">
+              <span class="app-table__status app-table__status_process">
+                <svg class="app-table__dot app-table__dot_process" viewBox="0 0 6 6" aria-hidden="true">
+                  <circle cx="3" cy="3" r="3"></circle>
+                </svg>
+                В работе
+              </span>
+            </td>
+            <td class="app-table__tdata">file.pdf</td>
+            <td class="app-table__tdata ">Нет</td>
+            <td class="app-table__tdata app-table__tdata_edit">
+              <a href="#" class="app-table__link app-table__link_edit">Редактировать</a>
+            </td>
+          </tr>
+          <tr class="app-table__row">
+            <td class="app-table__checkbox">
+              <div class="app-table__bar"></div>
+              <input type="checkbox" class="app-table__input">
+            </td>
+            <td class="app-table__tdata">3655e04e-30e2-48bd-ba72-46bbfc42dffb</td>
+            <td class="app-table__tdata">Гончаров Алексей Сергеевич</td>
+            <td class="app-table__tdata">УРПО</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">
+              <span class="app-table__status app-table__status_incomplete">
+                <svg class="app-table__dot app-table__dot_incomplete" viewBox="0 0 6 6" aria-hidden="true">
+                  <circle cx="3" cy="3" r="3"></circle>
+                </svg>
+                Не завершен
+              </span>
+            </td>
+            <td class="app-table__tdata">file.pdf</td>
+            <td class="app-table__tdata ">Да</td>
+            <td class="app-table__tdata app-table__tdata_edit">
+              <a href="#" class="app-table__link app-table__link_edit">Редактировать</a>
+            </td>
+          </tr>
+          <tr class="app-table__row">
+            <td class="app-table__checkbox">
+              <div class="app-table__bar"></div>
+              <input type="checkbox" class="app-table__input">
+            </td>
+            <td class="app-table__tdata">469d9863-8735-4b2c-99eb-4a4b50fabd63</td>
+            <td class="app-table__tdata">Гончаров Алексей Сергеевич</td>
+            <td class="app-table__tdata">УРПО</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">
+              <span class="app-table__status app-table__status_complete">
+                <svg class="app-table__dot app-table__dot_complete" viewBox="0 0 6 6" aria-hidden="true">
+                  <circle cx="3" cy="3" r="3"></circle>
+                </svg>
+                Завершен
+              </span>
+            </td>
+            <td class="app-table__tdata">file.pdf</td>
+            <td class="app-table__tdata ">Да</td>
+            <td class="app-table__tdata app-table__tdata_edit">
+              <a href="#" class="app-table__link app-table__link_edit">Редактировать</a>
+            </td>
+          </tr>
+          <tr class="app-table__row">
+            <td class="app-table__checkbox">
+              <div class="app-table__bar"></div>
+              <input type="checkbox" class="app-table__input">
+            </td>
+            <td class="app-table__tdata">8aa9e7c8-50dd-43b4-b505-a4ab77a1d4ae</td>
+            <td class="app-table__tdata">Гончаров Алексей Сергеевич</td>
+            <td class="app-table__tdata">УРПО</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">
+              <span class="app-table__status app-table__status_process">
+                <svg class="app-table__dot app-table__dot_process" viewBox="0 0 6 6" aria-hidden="true">
+                  <circle cx="3" cy="3" r="3"></circle>
+                </svg>
+                В работе
+              </span>
+            </td>
+            <td class="app-table__tdata">file.pdf</td>
+            <td class="app-table__tdata ">Да</td>
+            <td class="app-table__tdata app-table__tdata_edit">
+              <a href="#" class="app-table__link app-table__link_edit">Редактировать</a>
+            </td>
+          </tr>
+          <tr class="app-table__row">
+            <td class="app-table__checkbox">
+              <div class="app-table__bar"></div>
+              <input type="checkbox" class="app-table__input">
+            </td>
+            <td class="app-table__tdata">6c56a593-ff92-4efd-b974-e9a931d0f224</td>
+            <td class="app-table__tdata">Гончаров Алексей Сергеевич</td>
+            <td class="app-table__tdata">УРПО</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">
+              <span class="app-table__status app-table__status_process">
+                <svg class="app-table__dot app-table__dot_process" viewBox="0 0 6 6" aria-hidden="true">
+                  <circle cx="3" cy="3" r="3"></circle>
+                </svg>
+                В работе
+              </span>
+            </td>
+            <td class="app-table__tdata">file.pdf</td>
+            <td class="app-table__tdata ">Да</td>
+            <td class="app-table__tdata app-table__tdata_edit">
+              <a href="#" class="app-table__link app-table__link_edit">Редактировать</a>
+            </td>
+          </tr>
+          <tr class="app-table__row">
+            <td class="app-table__checkbox">
+              <div class="app-table__bar"></div>
+              <input type="checkbox" class="app-table__input">
+            </td>
+            <td class="app-table__tdata">b6541941-8b4e-4b14-956b-9da9f4371c22</td>
+            <td class="app-table__tdata">Гончаров Алексей Сергеевич</td>
+            <td class="app-table__tdata">УРПО</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">
+              <span class="app-table__status app-table__status_incomplete">
+                <svg class="app-table__dot app-table__dot_incomplete" viewBox="0 0 6 6" aria-hidden="true">
+                  <circle cx="3" cy="3" r="3"></circle>
+                </svg>
+                Не завершен
+              </span>
+            </td>
+            <td class="app-table__tdata">file.pdf</td>
+            <td class="app-table__tdata ">Да</td>
+            <td class="app-table__tdata app-table__tdata_edit">
+              <a href="#" class="app-table__link app-table__link_edit">Редактировать</a>
+            </td>
+          </tr>
+          <tr class="app-table__row">
+            <td class="app-table__checkbox">
+              <div class="app-table__bar"></div>
+              <input type="checkbox" class="app-table__input">
+            </td>
+            <td class="app-table__tdata">b62d6cb5-391a-4eb6-930d-b39a363d9f7e</td>
+            <td class="app-table__tdata">Гончаров Алексей Сергеевич</td>
+            <td class="app-table__tdata">УРПО</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">
+              <span class="app-table__status app-table__status_incomplete">
+                <svg class="app-table__dot app-table__dot_incomplete" viewBox="0 0 6 6" aria-hidden="true">
+                  <circle cx="3" cy="3" r="3"></circle>
+                </svg>
+                Не завершен
+              </span>
+            </td>
+            <td class="app-table__tdata">file.pdf</td>
+            <td class="app-table__tdata ">Нет</td>
+            <td class="app-table__tdata app-table__tdata_edit">
+              <a href="#" class="app-table__link app-table__link_edit">Редактировать</a>
+            </td>
+          </tr>
+          <tr class="app-table__row">
+            <td class="app-table__checkbox">
+              <div class="app-table__bar"></div>
+              <input type="checkbox" class="app-table__input">
+            </td>
+            <td class="app-table__tdata">49d4dee7-698d-4e3a-9822-a47893c31671</td>
+            <td class="app-table__tdata">Гончаров Алексей Сергеевич</td>
+            <td class="app-table__tdata">УРПО</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">
+              <span class="app-table__status app-table__status_process">
+                <svg class="app-table__dot app-table__dot_process" viewBox="0 0 6 6" aria-hidden="true">
+                  <circle cx="3" cy="3" r="3"></circle>
+                </svg>
+                В работе
+              </span>
+            </td>
+            <td class="app-table__tdata">file.pdf</td>
+            <td class="app-table__tdata ">Да</td>
+            <td class="app-table__tdata app-table__tdata_edit">
+              <a href="#" class="app-table__link app-table__link_edit">Редактировать</a>
+            </td>
+          </tr>
+          <tr class="app-table__row">
+            <td class="app-table__checkbox">
+              <div class="app-table__bar"></div>
+              <input type="checkbox" class="app-table__input">
+            </td>
+            <td class="app-table__tdata">acd66d9e-97e6-4ec7-b6b8-29fb808aa8b0</td>
+            <td class="app-table__tdata">Гончаров Алексей Сергеевич</td>
+            <td class="app-table__tdata">УРПО</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">20.05.2023 00:00</td>
+            <td class="app-table__tdata">
+              <span class="app-table__status app-table__status_incomplete">
+                <svg class="app-table__dot app-table__dot_incomplete" viewBox="0 0 6 6" aria-hidden="true">
+                  <circle cx="3" cy="3" r="3"></circle>
+                </svg>
+                Не завершен
+              </span>
+            </td>
+            <td class="app-table__tdata">file.pdf</td>
+            <td class="app-table__tdata">Нет</td>
+            <td class="app-table__tdata app-table__tdata_edit">
+              <a href="#" class="app-table__link app-table__link_edit">Редактировать</a>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
