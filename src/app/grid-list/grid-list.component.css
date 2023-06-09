@@ -4,12 +4,14 @@
   column-gap: 3rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin: 0;
-  padding: 5rem 0;
+  padding: 6rem 0;
 }
 .app-grid-list__item {
   display: flow-root;
 }
 .app-grid-list__heading {
+  position: absolute;
+  width: 100%;
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
@@ -26,9 +28,10 @@
   margin-left: -0.5rem;
   border-radius: 0.75rem;
   align-items: center;
-  transition: box-shadow 0.3s 0s cubic-bezier(0.45, 0, 0.55, 1);
+  transition: box-shadow, background-color, 0.3s 0s cubic-bezier(0.45, 0, 0.55, 1);
 }
 .app-grid-list__wrapper:hover {
+  background-color: rgb(255, 255, 255);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
 }
 .app-grid-list__icon-wrapper {
@@ -39,6 +42,7 @@
   border-radius: 0.5rem;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.06), 1px 1px 4px -2px rgba(0, 0, 0, 0.12), 2px 1px 4px -3px rgba(0, 0, 0, 0.24);
 }
 .app-grid-list__icon-wrapper[data-action=register] {
   background-color: rgb(255, 241, 242);

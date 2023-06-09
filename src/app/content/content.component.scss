@@ -1,20 +1,26 @@
 .app-content {
+  height: auto;
+  background-image: url("../.././assets/bg.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 
   &__wrapper {
     max-width: 80rem;
     padding: 0 2rem;
-    margin: 2rem auto;
-    border: 1px solid rgb(15, 23, 42, 0.1);
+    margin: 0 auto;
+    //border: 1px solid rgb(15, 23, 42, 0.1);
     border-radius: 0.5rem;
+
   }
 
   &__inner {
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     border-radius: 0.5rem;
   }
 
   &__content {
-    max-width: 80rem;
+    max-width: 56rem;
     margin: 0 auto;
   }
 
