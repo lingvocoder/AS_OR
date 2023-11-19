@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {environment} from "../environments/environment.development";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'OR_Front';
+  title = 'Operational Risks';
+  constructor() {
+    console.log(environment.production);
+  }
 }

@@ -1,0 +1,55 @@
+.app-not-found {
+  position: relative;
+  isolation: isolate;
+  min-height: 100%;
+}
+.app-not-found__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-position: top;
+  object-fit: cover;
+  inset: 0;
+  z-index: -10;
+}
+.app-not-found__wrapper {
+  max-width: 80rem;
+  padding: 10rem 2rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.app-not-found__heading {
+  margin-top: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  line-height: 1rem;
+  letter-spacing: -0.025rem;
+}
+.app-not-found__text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  line-height: 2rem;
+}
+.app-not-found__text_description {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5rem;
+}
+.app-not-found__link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  line-height: 1.75rem;
+  text-decoration: inherit;
+}
+.app-not-found__action {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+/*# sourceMappingURL=not-found.component.css.map */
