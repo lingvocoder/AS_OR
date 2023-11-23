@@ -32,9 +32,10 @@ $kkb-animation-timing: 0.45, 0, 0.55, 1;
     margin-left: -0.5rem;
     border-radius: 0.75rem;
     align-items: center;
-    transition: box-shadow, background-color, 0.25s 0s cubic-bezier($kkb-animation-timing);
+    transition: transform, box-shadow, background-color, 0.25s 0s cubic-bezier($kkb-animation-timing);
 
     &:hover {
+      transform: translate3d(0, -3px, 0);
       background-color: rgb(255, 255, 255);
       box-shadow:
         1px 5px 5px -3px rgba(0, 0, 0, 0.12),
